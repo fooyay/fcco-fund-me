@@ -2,6 +2,7 @@ const { assert, expect } = require("chai")
 const { deployments, ethers, getNamedAccounts } = require("hardhat")
 const { developmentChains } = require("../../helper-hardhat-config")
 
+// unit test
 !developmentChains.includes(network.name)
     ? describe.skip
     : describe("FundMe", async function () {
